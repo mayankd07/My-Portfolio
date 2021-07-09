@@ -69,10 +69,14 @@ header nav .left a{
     margin-right: 1rem;
     text-transform: uppercase;
     transition: all .3s ease;
+    display: inline-block;
 }
 
 header nav .left a:hover{
     color: var(--primary);
+    transform: translateY(1px);
+    
+
 }
 
 header nav {
@@ -228,6 +232,8 @@ section.education .card-wrapper .card{
 
 section.education .card-wrapper .card:hover{
     box-shadow: 0 0 7px 7px var(--ternary);
+    transform: scale(1.05, 1.05);
+   
     
 }
 
@@ -256,8 +262,8 @@ section.skills{
 
 section.skills .card-wrapper{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 20rem;
     row-gap: 2rem;
 }
 
@@ -377,6 +383,7 @@ section.experience .container .card-wrapper .card p{
 
 section.experience .container .card-wrapper .card:hover{
     box-shadow: 0 0 6px 6px rgb(104, 101, 101);
+    transform: scale(1.02);
    
 }
 
@@ -420,6 +427,10 @@ section.projects .card-wrapper{
 
 section.projects .card-wrapper .card{
     background: var(--pure);
+    transition: all .3s ease;
+}
+section.projects .card-wrapper .card:hover{
+    transform: translateY(12px);
 }
 
 section.projects .card-wrapper .card .img-wrapper img{
