@@ -27,9 +27,11 @@ html{
 header{
     background-color: var(--dark);
     clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 90%, 0 100%);
-    height: 90vh;
-    
+    height: 42rem;
+   
 }
+
+
 
 .container{
     max-width:70%;
@@ -70,6 +72,20 @@ header nav .left a{
     text-transform: uppercase;
     transition: all .3s ease;
     display: inline-block;
+    animation-name: mayank;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-delay: 0.3s;
+    animation-fill-mode: forwards;
+}
+@keyframes mayank{
+    0%{
+        color: var(--pure) ;
+    }
+    50%{
+        color: var(--primary);
+    }
 }
 
 header nav .left a:hover{
@@ -83,10 +99,15 @@ header nav {
     padding: 2rem 0;
 }
 
+
+
 .mayank .left img{
     margin-top: 3rem;
     width: 200px;
+    position: relative;
+    
 }
+
 
 .mayank .right{
     color: var(--pure);
@@ -103,6 +124,7 @@ header nav {
     font-weight: 100;
     line-height: 1.2;
     margin-bottom: 2rem;
+    
 }
 
 .mayank .right h1 span{
@@ -260,10 +282,11 @@ section.skills{
     background: var(--light);
 }
 
-section.skills .card-wrapper{
+section.skills .card-wrapper {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    column-gap: 20rem;
+    column-gap: 2rem;
+    margin-left: 112px;
     row-gap: 2rem;
 }
 
@@ -274,6 +297,7 @@ section.skills .card-wrapper .card{
     padding-top: 2.5rem;
     text-align: center;
     transition: all .4s ease;
+    width: 80%;
 }
 
 
@@ -546,13 +570,26 @@ section.contact .card-wrapper .card h5{
     top: 0;
     left: 0;
     z-index: 1001;
-    background: var(--light);
-    width: 100%;
+    background: var(--dark);
+    width: 80%;
     height: 100%;
     padding: 2rem;
     padding-top: 5rem;
     transform: translateX(-100%);
     transition: all .5s ease-in-out;
+    /* font-family: 'Lato', 'sans-serif'; */
+   
+}
+.mob-link a{
+    margin-bottom: 20px;
+}
+#link1, #link3, #link5, #link7{
+    color: var(--primary);
+    
+}
+
+#link2, #link4, #link6{
+    color: white;
 }
 
 .open{
@@ -567,6 +604,8 @@ section.contact .card-wrapper .card h5{
     background: none;
     outline: none;
     cursor: pointer;
+    border-radius: 10px;
+    filter:invert(100%)
 }
 
 .times img{
@@ -731,7 +770,7 @@ section.projects {
 
 @media(max-width:421px){
     header#home{
-        height: 120vh;
+        height: 42rem;
         /* width: 103%; */
     }
     .mayank .right h6 {
@@ -743,6 +782,11 @@ section.projects {
 }
 @media(max-width:360px){
     header#home {
-        height: 130vh;
+        height: 46rem;
+    }
+    @media(max-width:290px){
+        header#home {
+            height: 50rem;
+        }
     }
 }

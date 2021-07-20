@@ -9,27 +9,10 @@ $('.slider').slick({
     
 });
 
-$('#link1').click(function(){
+$('.mob-link').click(function(){
     mobileNav.classList.remove('open');
 });
-$('#link2').click(function(){
-    mobileNav.classList.remove('open');
-});
-$('#link3').click(function(){
-    mobileNav.classList.remove('open');
-});
-$('#link4').click(function(){
-    mobileNav.classList.remove('open');
-});
-$('#link5').click(function(){
-    mobileNav.classList.remove('open');
-});
-$('#link6').click(function(){
-    mobileNav.classList.remove('open');
-});
-$('#link7').click(function(){
-    mobileNav.classList.remove('open');
-});
+
 
 
 let hamburger = document.querySelector('.hamburger');
@@ -39,10 +22,13 @@ let mobileNav = document.querySelector('.mobile-nav');
 hamburger.addEventListener('click', function(){
     mobileNav.classList.add('open');
 });
+$('.mayank, .about, .education').click(function(){
+    mobileNav.classList.remove('open');
+
+})
 
 times.addEventListener('click', function(){
     mobileNav.classList.remove('open');
 });
-
 
 });
