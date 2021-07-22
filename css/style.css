@@ -680,6 +680,7 @@ section.projects {
     section.skills .card-wrapper {
         display: flex;
         flex-direction: column;
+        margin: auto;
     }
     section.skills .card-wrapper .card{
         margin: 2rem 2rem;
