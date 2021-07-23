@@ -99,6 +99,30 @@ header nav {
     padding: 2rem 0;
 }
 
+nav{
+    opacity: 0;
+    animation: fadeIn .5s forwards ease-in .3s;
+    
+}
+
+.mayank{
+    opacity: 0;
+    animation: fadeIn .5s forwards ease-in .5s;
+    
+}
+
+
+@keyframes fadeIn{
+    0% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
 
 .mayank .left img{
