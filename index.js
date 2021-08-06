@@ -8,5 +8,5 @@ app.get('/', (req, res)=>{
 })
 
 app.listen(process.env.PORT|| 3000, ()=>{
-    console.log("Server has started on port 3000");
+    console.log("Server has started successfully");
 })
