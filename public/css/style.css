@@ -308,9 +308,9 @@ section.skills{
 
 section.skills .card-wrapper {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     column-gap: 2rem;
-    margin-left: 112px;
+    /* margin-left: 70px; */
     row-gap: 2rem;
 }
 
@@ -321,7 +321,7 @@ section.skills .card-wrapper .card{
     padding-top: 2.5rem;
     text-align: center;
     transition: all .4s ease;
-    width: 80%;
+    width: 100%;
 }
 
 
